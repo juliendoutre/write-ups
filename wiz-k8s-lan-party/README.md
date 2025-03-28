@@ -1,4 +1,4 @@
-# Wiz K8s Lan Party
+# Wiz K8s LAN Party
 
 https://k8slanparty.com/
 
