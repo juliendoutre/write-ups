@@ -1,0 +1,59 @@
+{
+  "kind": "AdmissionReview",
+  "apiVersion": "admission.k8s.io/v1",
+  "request": {
+    "uid": "0df8d6a5-5050-4501-b562-3c851920b448",
+    "kind": {
+      "group": "",
+      "version": "v1",
+      "kind": "Pod"
+    },
+    "resource": {
+      "group": "",
+      "version": "v1",
+      "resource": "pods"
+    },
+    "requestKind": {
+      "group": "",
+      "version": "v1",
+      "kind": "Pod"
+    },
+    "requestResource": {
+      "group": "",
+      "version": "v1",
+      "resource": "pods"
+    },
+    "name": "test-pod",
+    "namespace": "sensitive-ns",
+    "operation": "CREATE",
+    "userInfo": {
+      "username": "kube-review",
+      "uid": "fca74de2-c42d-4c88-8a20-3435b9a0233f"
+    },
+    "object": {
+      "kind": "Pod",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "test-pod",
+        "namespace": "sensitive-ns",
+        "creationTimestamp": null
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "nginx",
+            "image": "nginx:latest",
+            "resources": {}
+          }
+        ]
+      },
+      "status": {}
+    },
+    "oldObject": null,
+    "dryRun": true,
+    "options": {
+      "kind": "CreateOptions",
+      "apiVersion": "meta.k8s.io/v1"
+    }
+  }
+}

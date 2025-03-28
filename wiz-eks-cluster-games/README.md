@@ -66,6 +66,8 @@ kubectl whoami
 kubectl auth can-i --list
 aws sts get-caller-identity
 cat ~/.kube/config
+aws eks list-clusters
+aws eks describe-cluster --name eks-challenge-cluster
 aws eks get-token --cluster-name eks-challenge-cluster --region us-west-1
 export EKS_TOKEN=$(aws eks get-token --cluster-name eks-challenge-cluster --region us-west-1 | jq -r -c '.status.token')
 # One can override kubectl auth config by passing `--token` explicitely
